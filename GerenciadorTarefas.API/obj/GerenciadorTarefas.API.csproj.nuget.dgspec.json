@@ -1,0 +1,258 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/jvsl/git/GerenciadorTarefas/GerenciadorTarefas.API/GerenciadorTarefas.API.csproj": {}
+  },
+  "projects": {
+    "/home/jvsl/git/GerenciadorTarefas/GerenciadorTarefas.API/GerenciadorTarefas.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/jvsl/git/GerenciadorTarefas/GerenciadorTarefas.API/GerenciadorTarefas.API.csproj",
+        "projectName": "GerenciadorTarefas.API",
+        "projectPath": "/home/jvsl/git/GerenciadorTarefas/GerenciadorTarefas.API/GerenciadorTarefas.API.csproj",
+        "packagesPath": "/home/jvsl/.nuget/packages/",
+        "outputPath": "/home/jvsl/git/GerenciadorTarefas/GerenciadorTarefas.API/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/jvsl/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/home/jvsl/git/GerenciadorTarefas/GerenciadorTarefas.Application/GerenciadorTarefas.Application.csproj": {
+                "projectPath": "/home/jvsl/git/GerenciadorTarefas/GerenciadorTarefas.Application/GerenciadorTarefas.Application.csproj"
+              },
+              "/home/jvsl/git/GerenciadorTarefas/GerenciadorTarefas.Infrastructure/GerenciadorTarefas.Infrastructure.csproj": {
+                "projectPath": "/home/jvsl/git/GerenciadorTarefas/GerenciadorTarefas.Infrastructure/GerenciadorTarefas.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.407/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/jvsl/git/GerenciadorTarefas/GerenciadorTarefas.Application/GerenciadorTarefas.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/jvsl/git/GerenciadorTarefas/GerenciadorTarefas.Application/GerenciadorTarefas.Application.csproj",
+        "projectName": "GerenciadorTarefas.Application",
+        "projectPath": "/home/jvsl/git/GerenciadorTarefas/GerenciadorTarefas.Application/GerenciadorTarefas.Application.csproj",
+        "packagesPath": "/home/jvsl/.nuget/packages/",
+        "outputPath": "/home/jvsl/git/GerenciadorTarefas/GerenciadorTarefas.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/jvsl/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/home/jvsl/git/GerenciadorTarefas/GerenciadorTarefas.Domain/GerenciadorTarefas.Domain.csproj": {
+                "projectPath": "/home/jvsl/git/GerenciadorTarefas/GerenciadorTarefas.Domain/GerenciadorTarefas.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.407/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/jvsl/git/GerenciadorTarefas/GerenciadorTarefas.Domain/GerenciadorTarefas.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/jvsl/git/GerenciadorTarefas/GerenciadorTarefas.Domain/GerenciadorTarefas.Domain.csproj",
+        "projectName": "GerenciadorTarefas.Domain",
+        "projectPath": "/home/jvsl/git/GerenciadorTarefas/GerenciadorTarefas.Domain/GerenciadorTarefas.Domain.csproj",
+        "packagesPath": "/home/jvsl/.nuget/packages/",
+        "outputPath": "/home/jvsl/git/GerenciadorTarefas/GerenciadorTarefas.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/jvsl/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.407/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/jvsl/git/GerenciadorTarefas/GerenciadorTarefas.Infrastructure/GerenciadorTarefas.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/jvsl/git/GerenciadorTarefas/GerenciadorTarefas.Infrastructure/GerenciadorTarefas.Infrastructure.csproj",
+        "projectName": "GerenciadorTarefas.Infrastructure",
+        "projectPath": "/home/jvsl/git/GerenciadorTarefas/GerenciadorTarefas.Infrastructure/GerenciadorTarefas.Infrastructure.csproj",
+        "packagesPath": "/home/jvsl/.nuget/packages/",
+        "outputPath": "/home/jvsl/git/GerenciadorTarefas/GerenciadorTarefas.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/jvsl/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/home/jvsl/git/GerenciadorTarefas/GerenciadorTarefas.Application/GerenciadorTarefas.Application.csproj": {
+                "projectPath": "/home/jvsl/git/GerenciadorTarefas/GerenciadorTarefas.Application/GerenciadorTarefas.Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.1.1, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.407/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

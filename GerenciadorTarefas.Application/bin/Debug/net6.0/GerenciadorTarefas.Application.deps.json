@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "GerenciadorTarefas.Application/1.0.0": {
+        "dependencies": {
+          "GerenciadorTarefas.Domain": "1.0.0"
+        },
+        "runtime": {
+          "GerenciadorTarefas.Application.dll": {}
+        }
+      },
+      "GerenciadorTarefas.Domain/1.0.0": {
+        "runtime": {
+          "GerenciadorTarefas.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "GerenciadorTarefas.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "GerenciadorTarefas.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,12 @@
+/home/jvsl/git/GerenciadorTarefas/GerenciadoTarefas.Domain/bin/Debug/net6.0/GerenciadoTarefas.Domain.deps.json
+/home/jvsl/git/GerenciadorTarefas/GerenciadoTarefas.Domain/bin/Debug/net6.0/GerenciadoTarefas.Domain.dll
+/home/jvsl/git/GerenciadorTarefas/GerenciadoTarefas.Domain/bin/Debug/net6.0/GerenciadoTarefas.Domain.pdb
+/home/jvsl/git/GerenciadorTarefas/GerenciadoTarefas.Domain/obj/Debug/net6.0/GerenciadoTarefas.Domain.csproj.AssemblyReference.cache
+/home/jvsl/git/GerenciadorTarefas/GerenciadoTarefas.Domain/obj/Debug/net6.0/GerenciadoTarefas.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/jvsl/git/GerenciadorTarefas/GerenciadoTarefas.Domain/obj/Debug/net6.0/GerenciadoTarefas.Domain.AssemblyInfoInputs.cache
+/home/jvsl/git/GerenciadorTarefas/GerenciadoTarefas.Domain/obj/Debug/net6.0/GerenciadoTarefas.Domain.AssemblyInfo.cs
+/home/jvsl/git/GerenciadorTarefas/GerenciadoTarefas.Domain/obj/Debug/net6.0/GerenciadoTarefas.Domain.csproj.CoreCompileInputs.cache
+/home/jvsl/git/GerenciadorTarefas/GerenciadoTarefas.Domain/obj/Debug/net6.0/GerenciadoTarefas.Domain.dll
+/home/jvsl/git/GerenciadorTarefas/GerenciadoTarefas.Domain/obj/Debug/net6.0/refint/GerenciadoTarefas.Domain.dll
+/home/jvsl/git/GerenciadorTarefas/GerenciadoTarefas.Domain/obj/Debug/net6.0/GerenciadoTarefas.Domain.pdb
+/home/jvsl/git/GerenciadorTarefas/GerenciadoTarefas.Domain/obj/Debug/net6.0/ref/GerenciadoTarefas.Domain.dll
