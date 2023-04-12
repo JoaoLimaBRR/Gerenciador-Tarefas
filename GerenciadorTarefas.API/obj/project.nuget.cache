@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "qWV0Z8JiCei4lKL/l6jJ25GyniZTDgdW+JRoEv1aaHrffhj6vLn3wXtAxiQJWXkSysKmvrP67zVLJHdX8nzfLg==",
+  "dgSpecHash": "sid+MIneCGwsy5XUsUXXfOK9FTzt/FOtBFn6H3RehArya/zZ5uqCwdU0bmgY77WDjFQg0xRS4iH771hJgM2Yvw==",
   "success": true,
   "projectFilePath": "/home/jvsl/git/GerenciadorTarefas/GerenciadorTarefas.API/GerenciadorTarefas.API.csproj",
   "expectedPackageFiles": [
     "/home/jvsl/.nuget/packages/azure.core/1.25.0/azure.core.1.25.0.nupkg.sha512",
     "/home/jvsl/.nuget/packages/azure.identity/1.7.0/azure.identity.1.7.0.nupkg.sha512",
+    "/home/jvsl/.nuget/packages/dapper/2.0.123/dapper.2.0.123.nupkg.sha512",
     "/home/jvsl/.nuget/packages/microsoft.aspnetcore.antiforgery/2.2.0/microsoft.aspnetcore.antiforgery.2.2.0.nupkg.sha512",
     "/home/jvsl/.nuget/packages/microsoft.aspnetcore.authentication.abstractions/2.2.0/microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "/home/jvsl/.nuget/packages/microsoft.aspnetcore.authentication.core/2.2.0/microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",

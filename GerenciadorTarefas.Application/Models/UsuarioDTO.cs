@@ -3,7 +3,7 @@ namespace GerenciadorTarefas.Application.Dto{
 
         public string? Nome { get; set; }
         public DateTime DataNascimento { get; set; }
-        public string? CadastroPessoaFisica { get; set; }
+        public string? Cpf { get; set; }
     }
 }
 

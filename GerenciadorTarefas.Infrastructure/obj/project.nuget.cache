@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "lTq1eqCIcAZCeuKifRMXSN6wJfQOb02AhweTYEIORVwc6BqRBJxqUi08TNTa8RQN/7yB0Oe26tG7uZrJ1Og/yg==",
+  "dgSpecHash": "CpGFHaQSxHAAs+FiWcYIK9uS564g0rqtrKvXR80VKTjImy1B3aM4Gpa45/hqnoUqDhSV7pRZ5GiIidq4dbKtJQ==",
   "success": true,
   "projectFilePath": "/home/jvsl/git/GerenciadorTarefas/GerenciadorTarefas.Infrastructure/GerenciadorTarefas.Infrastructure.csproj",
   "expectedPackageFiles": [
     "/home/jvsl/.nuget/packages/azure.core/1.25.0/azure.core.1.25.0.nupkg.sha512",
     "/home/jvsl/.nuget/packages/azure.identity/1.7.0/azure.identity.1.7.0.nupkg.sha512",
+    "/home/jvsl/.nuget/packages/dapper/2.0.123/dapper.2.0.123.nupkg.sha512",
     "/home/jvsl/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.1/microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "/home/jvsl/.nuget/packages/microsoft.csharp/4.5.0/microsoft.csharp.4.5.0.nupkg.sha512",
     "/home/jvsl/.nuget/packages/microsoft.data.sqlclient/5.1.1/microsoft.data.sqlclient.5.1.1.nupkg.sha512",

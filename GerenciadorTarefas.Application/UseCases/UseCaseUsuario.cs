@@ -21,6 +21,12 @@ namespace GerenciadorTarefas.Application.UseCases {
             return usuario;
         }
 
+        public async Task<Usuario> BuscarTarefasUsuarioAsync(string cadastroPessoaFisica)
+        {
+            var usuario = await _usuarioRepository.BuscarTarefasUsuarioAsync(cadastroPessoaFisica);
+            return usuario;
+        }
+
         public async Task CriarUsuario(UsuarioDto usuarioDto) 
         {
             var usuario = PreencherUsuario(usuarioDto);
@@ -28,11 +34,12 @@ namespace GerenciadorTarefas.Application.UseCases {
             await _usuarioRepository.CriarUsuario(usuario);
         }
 
-        public async Task<Usuario?> AtualizarUsuario(UsuarioAtualizadoDTO usuarioAtualizadoDTO, Usuario usuario)
+        public async Task<Usuario?> AtualizarUsuarioAsync(UsuarioAtualizadoDTO usuarioAtualizadoDTO, Usuario usuario)
         {
             var usuarioAtualizado = PreencherUsuarioAtualizado(usuarioAtualizadoDTO, usuario);
             
-            await _usuarioRepository.AtualizarUsuario(usuarioAtualizado);
+            if (usuarioAtualizado !=  null)
+                await _usuarioRepository.AtualizarUsuarioAsync(usuarioAtualizado);
 
             return usuarioAtualizado;
         }
@@ -42,7 +49,7 @@ namespace GerenciadorTarefas.Application.UseCases {
             return new Usuario(
                usuarioAtualizadoDTO.Nome == null ? "" : usuarioAtualizadoDTO.Nome,
                usuarioAtualizadoDTO.DataNascimento,
-               usuario.CadastroPessoaFisica == null ? "" : usuario.CadastroPessoaFisica
+               usuario.Cpf == null ? "" : usuario.Cpf
            );
         }
 
@@ -51,7 +58,7 @@ namespace GerenciadorTarefas.Application.UseCases {
             return new Usuario(
                 usuarioDto.Nome == null ? "" : usuarioDto.Nome,
                 usuarioDto.DataNascimento,
-                usuarioDto.CadastroPessoaFisica == null ? "" : usuarioDto.CadastroPessoaFisica
+                usuarioDto.Cpf == null ? "" : usuarioDto.Cpf
 
             );
         }

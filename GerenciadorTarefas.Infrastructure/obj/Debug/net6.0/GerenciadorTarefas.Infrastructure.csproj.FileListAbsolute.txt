@@ -1,8 +1,3 @@
-/home/jvsl/git/GerenciadorTarefas/GerenciadorTarefas.Infrastructure/obj/Debug/net6.0/GerenciadorTarefas.Infrastructure.csproj.AssemblyReference.cache
-/home/jvsl/git/GerenciadorTarefas/GerenciadorTarefas.Infrastructure/obj/Debug/net6.0/GerenciadorTarefas.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
-/home/jvsl/git/GerenciadorTarefas/GerenciadorTarefas.Infrastructure/obj/Debug/net6.0/GerenciadorTarefas.Infrastructure.AssemblyInfoInputs.cache
-/home/jvsl/git/GerenciadorTarefas/GerenciadorTarefas.Infrastructure/obj/Debug/net6.0/GerenciadorTarefas.Infrastructure.AssemblyInfo.cs
-/home/jvsl/git/GerenciadorTarefas/GerenciadorTarefas.Infrastructure/obj/Debug/net6.0/GerenciadorTarefas.Infrastructure.csproj.CoreCompileInputs.cache
 /home/jvsl/git/GerenciadorTarefas/GerenciadorTarefas.Infrastructure/bin/Debug/net6.0/GerenciadorTarefas.Infrastructure.deps.json
 /home/jvsl/git/GerenciadorTarefas/GerenciadorTarefas.Infrastructure/bin/Debug/net6.0/GerenciadorTarefas.Infrastructure.dll
 /home/jvsl/git/GerenciadorTarefas/GerenciadorTarefas.Infrastructure/bin/Debug/net6.0/GerenciadorTarefas.Infrastructure.pdb
@@ -10,6 +5,11 @@
 /home/jvsl/git/GerenciadorTarefas/GerenciadorTarefas.Infrastructure/bin/Debug/net6.0/GerenciadorTarefas.Domain.dll
 /home/jvsl/git/GerenciadorTarefas/GerenciadorTarefas.Infrastructure/bin/Debug/net6.0/GerenciadorTarefas.Application.pdb
 /home/jvsl/git/GerenciadorTarefas/GerenciadorTarefas.Infrastructure/bin/Debug/net6.0/GerenciadorTarefas.Domain.pdb
+/home/jvsl/git/GerenciadorTarefas/GerenciadorTarefas.Infrastructure/obj/Debug/net6.0/GerenciadorTarefas.Infrastructure.csproj.AssemblyReference.cache
+/home/jvsl/git/GerenciadorTarefas/GerenciadorTarefas.Infrastructure/obj/Debug/net6.0/GerenciadorTarefas.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/home/jvsl/git/GerenciadorTarefas/GerenciadorTarefas.Infrastructure/obj/Debug/net6.0/GerenciadorTarefas.Infrastructure.AssemblyInfoInputs.cache
+/home/jvsl/git/GerenciadorTarefas/GerenciadorTarefas.Infrastructure/obj/Debug/net6.0/GerenciadorTarefas.Infrastructure.AssemblyInfo.cs
+/home/jvsl/git/GerenciadorTarefas/GerenciadorTarefas.Infrastructure/obj/Debug/net6.0/GerenciadorTarefas.Infrastructure.csproj.CoreCompileInputs.cache
 /home/jvsl/git/GerenciadorTarefas/GerenciadorTarefas.Infrastructure/obj/Debug/net6.0/GerenciadorTarefas.Infrastructure.csproj.CopyComplete
 /home/jvsl/git/GerenciadorTarefas/GerenciadorTarefas.Infrastructure/obj/Debug/net6.0/GerenciadorTarefas.Infrastructure.dll
 /home/jvsl/git/GerenciadorTarefas/GerenciadorTarefas.Infrastructure/obj/Debug/net6.0/refint/GerenciadorTarefas.Infrastructure.dll

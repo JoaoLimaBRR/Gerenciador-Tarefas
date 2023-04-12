@@ -5,7 +5,8 @@ namespace GerenciadorTarefas.Domain.Gateways {
     {
         Task CriarUsuario(Usuario usuario);
         Task<Usuario> BuscarUsuario(string cadastroPessoaFisica);
-        Task AtualizarUsuario(Usuario usuario);
+        Task<Usuario> BuscarTarefasUsuarioAsync(string cadastroPessoaFisica);
+        Task AtualizarUsuarioAsync(Usuario usuario);
     }
 }
 

@@ -14,28 +14,34 @@ namespace GerenciadorTarefas.API.Controllers{
         }
 
         [HttpGet("v1/usuarios/{cadastroPessoaFisica}")]
-        public async Task<IActionResult> BuscarCliente([FromRoute] string cadastroPessoaFisica)
+        public async Task<IActionResult> BuscarUsuario([FromRoute] string cadastroPessoaFisica)
         {
             var usuario = await _useCaseUsuario.BuscarUsuario(cadastroPessoaFisica);
             return Ok(new ResultViewModel<Usuario?>(usuario));
         }
+        [HttpGet("v1/usuarios/tarefas/{cadastroPessoaFisica}")]
+        public async Task<IActionResult> BuscarTarefasUsuario([FromRoute] string cadastroPessoaFisica)
+        {
+            var usuario = await _useCaseUsuario.BuscarTarefasUsuarioAsync(cadastroPessoaFisica);
+            return Ok(usuario);
+        }
 
         [HttpPost("v1/usuarios")]
-        public async Task<IActionResult> CriarCliente([FromBody] UsuarioDto usuario)
+        public async Task<IActionResult> CriarUsuario([FromBody] UsuarioDto usuario)
         {
             await _useCaseUsuario.CriarUsuario(usuario);
 
-            return Created($"v1/usuarios/{usuario.CadastroPessoaFisica}",new ResultViewModel<UsuarioDto>(usuario));
+            return Created($"v1/usuarios/{usuario.Cpf}",new ResultViewModel<UsuarioDto>(usuario));
         } 
 
         [HttpPut("v1/usuarios/{cadastroPessoaFisica}")]
-        public async Task<IActionResult> AtualizarCliente([FromBody] UsuarioAtualizadoDTO UsuarioAtualizadoDTO, [FromRoute] string cadastroPessoaFisica)
+        public async Task<IActionResult> ArualizarUsuario([FromBody] UsuarioAtualizadoDTO UsuarioAtualizadoDTO, [FromRoute] string cadastroPessoaFisica)
         {
             var usuario = await _useCaseUsuario.BuscarUsuario(cadastroPessoaFisica);
              if (usuario == null) 
-                return StatusCode(404, "Usuário não encontrado");
+                return StatusCode(404, new ResultViewModel<Usuario?>("Usuario não encontrado"));
             
-            var usuarioAtualizado = await _useCaseUsuario.AtualizarUsuario(UsuarioAtualizadoDTO, usuario);
+            var usuarioAtualizado = await _useCaseUsuario.AtualizarUsuarioAsync(UsuarioAtualizadoDTO, usuario);
 
             return Ok(new ResultViewModel<Usuario?>(usuarioAtualizado));
         }

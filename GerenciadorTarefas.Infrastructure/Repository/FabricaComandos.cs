@@ -16,7 +16,7 @@ namespace GerenciadorTarefas.Insfrastructre.Repository{
             
             AddParametro(dbCommand, "@NOME", ParameterDirection.Input, DbType.String, 55, usuario.Nome);
             AddParametro(dbCommand, "@DATANASCIMENTO",  ParameterDirection.Input, DbType.DateTime, 0, usuario.DataNascimento);
-            AddParametro(dbCommand, "@CPF", ParameterDirection.Input, DbType.String, 11, usuario.CadastroPessoaFisica);
+            AddParametro(dbCommand, "@CPF", ParameterDirection.Input, DbType.String, 11, usuario.Cpf);
 
             return dbCommand;
         }
@@ -39,7 +39,7 @@ namespace GerenciadorTarefas.Insfrastructre.Repository{
             dbCommand.Transaction = dbTransaction;
             dbCommand.CommandText = "UPDATE USUARIO SET NOME = @NOME, DATANASCIMENTO = @DATANASCIMENTO WHERE CPF = @CPF";
             
-            AddParametro(dbCommand, "@CPF", ParameterDirection.Input, DbType.String, 11, usuario.CadastroPessoaFisica);
+            AddParametro(dbCommand, "@CPF", ParameterDirection.Input, DbType.String, 11, usuario.Cpf);
             AddParametro(dbCommand, "@NOME", ParameterDirection.Input, DbType.String, 55, usuario.Nome);
             AddParametro(dbCommand, "@DATANASCIMENTO", ParameterDirection.Input, DbType.DateTime, 0, usuario.DataNascimento);
 

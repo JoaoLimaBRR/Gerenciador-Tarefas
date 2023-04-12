@@ -7,7 +7,8 @@ namespace GerenciadorTarefas.Application.UseCases.Interface {
     {
         Task CriarUsuario(UsuarioDto usuarioDto);
         Task<Usuario?> BuscarUsuario(string cadastroPessoaFisica);
-        Task<Usuario?> AtualizarUsuario(UsuarioAtualizadoDTO usuarioAtualizadoDTO, Usuario usuario);
+        Task<Usuario> BuscarTarefasUsuarioAsync(string cadastroPessoaFisica);
+        Task<Usuario?> AtualizarUsuarioAsync(UsuarioAtualizadoDTO usuarioAtualizadoDTO, Usuario usuario);
 
     }
 }
