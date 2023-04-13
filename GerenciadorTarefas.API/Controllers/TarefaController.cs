@@ -13,10 +13,16 @@ namespace GerenciadorTarefas.API.Controllers{
         }
 
         [HttpGet("v1/tarefas")]
-        public async Task<IActionResult> BuscarTarefas()
+        public async Task<IActionResult> BuscarTarefasAsync()
         {
-            var tarefa = _useCaseTarefa.BuscarTarefas();
-            return Ok(tarefa);
+            var tarefa = await _useCaseTarefa.BuscarTarefasAsync();
+
+            if(tarefa == null){
+                return StatusCode(404, new ResultViewModel<Tarefa?>("Não existe tarefa cadastrada"));
+            }else{
+                return Ok(tarefa);
+            }
+            
         }
 
     }

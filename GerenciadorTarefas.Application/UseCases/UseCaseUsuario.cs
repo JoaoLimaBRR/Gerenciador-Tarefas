@@ -15,9 +15,9 @@ namespace GerenciadorTarefas.Application.UseCases {
             _usuarioRepository = usuarioRepository;
         }
 
-        public async Task<Usuario?> BuscarUsuario(string cadastroPessoaFisica)
+        public async Task<Usuario?> BuscarUsuarioAsync(string cadastroPessoaFisica)
         {
-            var usuario = await _usuarioRepository.BuscarUsuario(cadastroPessoaFisica);
+            var usuario = await _usuarioRepository.BuscarUsuarioAsync(cadastroPessoaFisica);
             return usuario;
         }
 
@@ -27,11 +27,11 @@ namespace GerenciadorTarefas.Application.UseCases {
             return usuario;
         }
 
-        public async Task CriarUsuario(UsuarioDto usuarioDto) 
+        public async Task CriarUsuarioAsync(UsuarioDto usuarioDto) 
         {
             var usuario = PreencherUsuario(usuarioDto);
 
-            await _usuarioRepository.CriarUsuario(usuario);
+            await _usuarioRepository.CriarUsuarioAsync(usuario);
         }
 
         public async Task<Usuario?> AtualizarUsuarioAsync(UsuarioAtualizadoDTO usuarioAtualizadoDTO, Usuario usuario)

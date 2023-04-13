@@ -9,52 +9,24 @@ namespace GerenciadorTarefas.Insfrastructre.Repository{
     public class UsuarioRepository : IUsuarioRepository
     {
         private readonly string? _connectionString;
-        public UsuarioRepository(IConfiguration configuration)
+        public UsuarioRepository(IConfiguration configuration) => _connectionString = configuration.GetConnectionString("DefaultConnection");
+        public async Task CriarUsuarioAsync(Usuario usuario)
         {
-            _connectionString = configuration.GetConnectionString("DefaultConnection");
-        }
-        public async Task CriarUsuario(Usuario usuario)
-        {
-            var dbConnection = new SqlConnection(_connectionString);
+            var command = "INSERT USUARIO(NOME, DATANASCIMENTO, CPF) VALUES (@NOME, @DATANASCIMENTO, @CPF)";
 
-            try
-            {
-                var command = "INSERT USUARIO(NOME, DATANASCIMENTO, CPF) VALUES (@NOME, @DATANASCIMENTO, @CPF)";
+            using(var dbConnection = new SqlConnection(_connectionString)){
                 var parans = new {usuario.Nome, usuario.DataNascimento, usuario.Cpf};
-                var rows = dbConnection.Execute(command, parans);
-            }
-            catch(Exception ex)
-            {
-                throw ex;
-            }
-            finally
-            {
-                await dbConnection.DisposeAsync();
-                
+                await dbConnection.ExecuteAsync(command, parans);
             }
         }
 
-        public async Task<Usuario> BuscarUsuario(string cadastroPessoaFisica)
+        public async Task<Usuario> BuscarUsuarioAsync(string cadastroPessoaFisica)
         {
-            DbConnection dbConnection = new SqlConnection(_connectionString);
-            DbCommand? dbCommand = null;
+            var commandSql = "SELECT * FROM USUARIO WHERE CPF = @CPF";
 
-            try
-            {
-                var usuario = await dbConnection.QueryFirstAsync<Usuario>("SELECT * FROM USUARIO WHERE CPF = @CPF", new {CPF = cadastroPessoaFisica});
+            using(var dbConnection = new SqlConnection(_connectionString))
+                return await dbConnection.QueryFirstAsync<Usuario>( commandSql, new {CPF = cadastroPessoaFisica});
 
-                return usuario;
-            }
-            catch(Exception ex)
-            {
-                throw ex;
-            }
-            finally
-            {
-                dbCommand?.Dispose();
-                await dbConnection.DisposeAsync();
-                
-            }
         }
 
         public async Task<Usuario> BuscarTarefasUsuarioAsync(string cadastroPessoaFisica)

@@ -13,14 +13,8 @@ namespace GerenciadorTarefas.Application.Models{
         {
             Data = data;
         }
-        public ResultViewModel(List<string?> errors)
-        {
-            Errors = errors;
-        }
-        public ResultViewModel(string? errors)
-        {
-            Errors.Add(errors);
-        }
+        public ResultViewModel(List<string?> errors) => Errors = errors;
+        public ResultViewModel(string? errors) => Errors.Add(errors);
 
 
     }

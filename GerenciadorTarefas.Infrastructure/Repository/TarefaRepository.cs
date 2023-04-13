@@ -9,17 +9,14 @@ namespace GerenciadorTarefas.Insfrastructre.Repository{
     {
         private readonly string? _connectionString;
 
-        public TarefaRepository(IConfiguration configuration)
-        {
-            _connectionString = configuration.GetConnectionString("DefaultConnection");
-        }
+        public TarefaRepository(IConfiguration configuration) => _connectionString = configuration.GetConnectionString("DefaultConnection");
 
-        public IEnumerable<Tarefa> BuscarTarefas()
+        public async Task<IEnumerable<Tarefa>> BuscarTarefasAsync()
         {
             var command = "SELECT * FROM TAREFA INNER JOIN SITUACAO ON TAREFA.CodigoSituacao = SITUACAO.Codigo";
             using(var connection = new SqlConnection(_connectionString)){
 
-                return connection.Query<Tarefa, Situacao, Tarefa>(
+                return await connection.QueryAsync<Tarefa, Situacao, Tarefa>(
                 command,
                 (tarefa, situacao) =>{
                     tarefa.Situacao = situacao;

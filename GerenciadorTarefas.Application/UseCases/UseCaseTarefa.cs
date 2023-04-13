@@ -10,9 +10,9 @@ namespace GerenciadorTarefas.Application.UseCases {
         {
             _tarefaReposiroty = tarefaReposiroty;
         }
-        public IEnumerable<Tarefa> BuscarTarefas()
+        public Task<IEnumerable<Tarefa>> BuscarTarefasAsync()
         {
-            return _tarefaReposiroty.BuscarTarefas();
+            return _tarefaReposiroty.BuscarTarefasAsync();
         }
     }
 }
