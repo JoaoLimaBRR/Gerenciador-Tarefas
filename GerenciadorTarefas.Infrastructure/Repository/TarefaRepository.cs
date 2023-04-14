@@ -26,6 +26,24 @@ namespace GerenciadorTarefas.Insfrastructre.Repository{
             }
         }
 
-         
+        public async Task CriarTarefaAsync(Tarefa tarefa)
+        {
+            var commandSql = "INSERT INTO TAREFA VALUES(@ID, @CPF, @TITULO, @DESCRICAO, @SITUACAO)";
+
+            using (var connection = new SqlConnection(_connectionString)){
+                await connection.ExecuteAsync(
+                    commandSql,
+                    new {
+                        tarefa.IdTarefa,
+                        tarefa.CpfUsuarioTarefa,
+                        tarefa.Titulo,
+                        tarefa.Descricao,
+                        tarefa.Situacao.Codigo
+                    }   
+                    
+                );
+            }
+
+        }
     }
 }

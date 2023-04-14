@@ -31,7 +31,7 @@ namespace GerenciadorTarefas.Insfrastructre.Repository{
 
         public async Task<Usuario> BuscarTarefasUsuarioAsync(string cadastroPessoaFisica)
         {
-            var commandSql = "SELECT * FROM USUARIO INNER JOIN TAREFA ON USUARIO.Cpf = TAREFA.Cpf INNER JOIN SITUACAO ON SITUACAO.Codigo = TAREFA.CodigoSituacao WHERE USUARIO.Cpf = @CPF";
+            var commandSql = "SELECT * FROM USUARIO INNER JOIN TAREFA ON USUARIO.Cpf = TAREFA.CpfUsuarioTarefa INNER JOIN SITUACAO ON SITUACAO.Codigo = TAREFA.CodigoSituacao WHERE USUARIO.Cpf = @CPF";
             var usuarioRetorno = new Usuario();
             using (var sqlConnection = new SqlConnection(_connectionString))
             {

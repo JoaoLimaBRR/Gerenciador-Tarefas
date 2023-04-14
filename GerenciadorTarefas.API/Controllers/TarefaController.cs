@@ -1,3 +1,4 @@
+using GerenciadorTarefas.Application.DTOs;
 using GerenciadorTarefas.Application.Models;
 using GerenciadorTarefas.Application.UseCases.Interface;
 using GerenciadorTarefas.Domain.Models;
@@ -20,8 +21,16 @@ namespace GerenciadorTarefas.API.Controllers{
             if(tarefa == null){
                 return StatusCode(404, new ResultViewModel<Tarefa?>("Não existe tarefa cadastrada"));
             }else{
-                return Ok(tarefa);
+                return Ok(new ResultViewModel<IEnumerable<Tarefa?>>(tarefa));
             }
+            
+        }
+
+        [HttpPost("v1/tarefas")]
+        public async Task<IActionResult> CriarTarefasAsync([FromBody] TarefaDTO tarefaDTO)
+        {
+            await _useCaseTarefa.CriarTarefaAsync(tarefaDTO);
+            return Ok(new ResultViewModel<TarefaDTO>(tarefaDTO));
             
         }
 

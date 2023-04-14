@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
-using GerenciadorTarefas.Application.Dto;
 using GerenciadorTarefas.Application.UseCases.Interface;
 using GerenciadorTarefas.Application.Models;
 using GerenciadorTarefas.Domain.Models;
+using GerenciadorTarefas.Application.DTOs;
 
 namespace GerenciadorTarefas.API.Controllers{
     [ApiController]

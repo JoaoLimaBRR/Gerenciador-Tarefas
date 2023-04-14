@@ -1,8 +1,8 @@
 using GerenciadorTarefas.Domain.Models;
-using GerenciadorTarefas.Application.Dto;
 using GerenciadorTarefas.Application.UseCases.Interface;
 using GerenciadorTarefas.Domain.Gateways;
 using GerenciadorTarefas.Application.Models;
+using GerenciadorTarefas.Application.DTOs;
 
 namespace GerenciadorTarefas.Application.UseCases {
     public class UseCaseUsuario : IUseCaseUsuario

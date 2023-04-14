@@ -12,13 +12,15 @@ CREATE TABLE Situacao(
 
 CREATE TABLE Tarefa (
     IdTarefa UNIQUEIDENTIFIER NOT NULL,
-    Descricao VARCHAR(255) NOT NULL,
+    CpfUsuarioTarefa VARCHAR(11),
     Titulo VARCHAR(55) NOT NULL,
-    Cpf VARCHAR(11) NOT NULL,
+    Descricao VARCHAR(255) NOT NULL,
     CodigoSituacao INTEGER NOT NULL,
     CONSTRAINT fk_Tarefa_Situacao FOREIGN KEY (CodigoSituacao) REFERENCES Situacao (Codigo),
-    CONSTRAINT fk_Usuario_Tarefa FOREIGN KEY (Cpf) REFERENCES Usuario (Cpf)
+    CONSTRAINT fk_Usuario_Tarefa FOREIGN KEY (CpfUsuarioTarefa) REFERENCES Usuario (Cpf)
 )
+
+drop table tarefa
 
 drop TABLE Usuario
 drop TABLE Situacao

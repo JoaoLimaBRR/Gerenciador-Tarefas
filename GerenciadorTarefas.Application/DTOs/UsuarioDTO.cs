@@ -1,4 +1,4 @@
-namespace GerenciadorTarefas.Application.Dto{
+namespace GerenciadorTarefas.Application.DTOs{
     public class UsuarioDto {
 
         public string? Nome { get; set; }

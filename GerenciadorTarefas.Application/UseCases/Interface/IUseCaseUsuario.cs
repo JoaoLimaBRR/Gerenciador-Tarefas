@@ -1,4 +1,4 @@
-using GerenciadorTarefas.Application.Dto;
+using GerenciadorTarefas.Application.DTOs;
 using GerenciadorTarefas.Application.Models;
 using GerenciadorTarefas.Domain.Models;
 
