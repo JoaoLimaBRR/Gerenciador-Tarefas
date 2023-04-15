@@ -28,7 +28,7 @@ namespace GerenciadorTarefas.Insfrastructre.Repository{
 
         public async Task CriarTarefaAsync(Tarefa tarefa)
         {
-            var commandSql = "INSERT INTO TAREFA VALUES(@ID, @CPF, @TITULO, @DESCRICAO, @SITUACAO)";
+            var commandSql = "INSERT INTO TAREFA VALUES(@IDTAREFA, @CPFUSUARIOTAREFA, @TITULO, @DESCRICAO, @CODIGO)";
 
             using (var connection = new SqlConnection(_connectionString)){
                 await connection.ExecuteAsync(

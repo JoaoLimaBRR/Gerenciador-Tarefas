@@ -30,7 +30,7 @@ namespace GerenciadorTarefas.Application.UseCases {
                 new Tarefa
                 {
                     IdTarefa = new Guid(),
-                    CpfUsuarioTarefa = tarefaDTO.CpfUsuario == null ? "" : tarefaDTO.CpfUsuario,
+                    CpfUsuarioTarefa = tarefaDTO.CpfUsuario == null ? null : tarefaDTO.CpfUsuario,
                     Titulo = tarefaDTO.Titulo,
                     Descricao = tarefaDTO.Descricao,
                     Situacao = new Situacao{
