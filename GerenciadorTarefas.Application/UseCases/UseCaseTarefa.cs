@@ -29,7 +29,7 @@ namespace GerenciadorTarefas.Application.UseCases {
             return 
                 new Tarefa
                 {
-                    IdTarefa = new Guid(),
+                    IdTarefa = Guid.NewGuid(),
                     CpfUsuarioTarefa = tarefaDTO.CpfUsuario == null ? null : tarefaDTO.CpfUsuario,
                     Titulo = tarefaDTO.Titulo,
                     Descricao = tarefaDTO.Descricao,
