@@ -2,7 +2,20 @@ USE MASTER;
 CREATE TABLE Usuario(
     Cpf VARCHAR(11) PRIMARY KEY NOT NULL, 
     Nome VARCHAR(55) NOT NULL, 
-    DataNascimento DATE NOT NULL
+    DataNascimento DATE NOT NULL,
+)
+
+CREATE TABLE Permissao(
+    CodigoPermissao INT PRIMARY KEY IDENTITY (1 , 1 ),
+    DescricaoPermissao VARCHAR(55) NOT NULL
+)
+
+CREATE TABLE UsuarioPermissao(
+    CpfUsuario VARCHAR(11)  NOT NULL, 
+    CodigoPermissao INT NOT NULL,
+    CONSTRAINT fk_Usuario_Permissao FOREIGN KEY (CpfUsuario) REFERENCES Usuario (Cpf),
+    CONSTRAINT fk_Permissao_Usuario FOREIGN KEY (CodigoPermissao) REFERENCES Permissao (CodigoPermissao),
+    PRIMARY KEY (CpfUsuario, CodigoPermissao)
 )
 
 CREATE TABLE Situacao(

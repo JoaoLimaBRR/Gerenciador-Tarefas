@@ -17,5 +17,6 @@ namespace GerenciadorTarefas.Domain.Models {
         public DateTime DataNascimento { get; set; }
         public string? Cpf { get; set; }
         public List<Tarefa> Tarefas { get; set; }
+        public List<Permissao> Permissoes { get; set; }
     }      
 }

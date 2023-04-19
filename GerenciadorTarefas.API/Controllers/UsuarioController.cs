@@ -3,18 +3,30 @@ using GerenciadorTarefas.Application.UseCases.Interface;
 using GerenciadorTarefas.Application.Models;
 using GerenciadorTarefas.Domain.Models;
 using GerenciadorTarefas.Application.DTOs;
+using GerenciadorTarefas.Insfrastructre.DataProviders.Interface;
 
 namespace GerenciadorTarefas.API.Controllers{
     [ApiController]
     public class UsuarioController : ControllerBase {
         private readonly IUseCaseUsuario _useCaseUsuario;
-        public UsuarioController(IUseCaseUsuario useCaseUsuario) =>  _useCaseUsuario = useCaseUsuario;
+        private readonly ITokenService _tokenService;
+        public UsuarioController(IUseCaseUsuario useCaseUsuario, ITokenService tokenService){
+           _useCaseUsuario = useCaseUsuario;
+           _tokenService = tokenService;
+        }  
+
+        [HttpPost("v1/login")]
+        public IActionResult Login(){
+            var token = _tokenService.GeneratorToken(null);
+            return Ok(token);
+        }
 
         [HttpGet("v1/usuarios/{cadastroPessoaFisica}")]
         public async Task<IActionResult> BuscarUsuarioAsync([FromRoute] string cadastroPessoaFisica)
         {
             var usuario = await _useCaseUsuario.BuscarUsuarioAsync(cadastroPessoaFisica);
 
+            
             if (usuario == null)
             {
                 return StatusCode(404, new ResultViewModel<Usuario?>("Usuario não encontrado"));

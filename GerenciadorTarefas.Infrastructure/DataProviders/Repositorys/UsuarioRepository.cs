@@ -5,7 +5,7 @@ using Microsoft.Extensions.Configuration;
 using GerenciadorTarefas.Domain.Gateways;
 using Dapper;
 
-namespace GerenciadorTarefas.Insfrastructre.Repository{
+namespace GerenciadorTarefas.Insfrastructre.DataProviders.Repositorys{
     public class UsuarioRepository : IUsuarioRepository
     {
         private readonly string? _connectionString;

@@ -4,7 +4,7 @@ using GerenciadorTarefas.Domain.Models;
 using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Configuration;
 
-namespace GerenciadorTarefas.Insfrastructre.Repository{
+namespace GerenciadorTarefas.Insfrastructre.DataProviders.Repositorys{
     public class TarefaRepository : ITarefaRepository
     {
         private readonly string? _connectionString;
